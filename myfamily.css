@@ -1,0 +1,134 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+*{
+	padding: 0px;
+	margin:0px;
+	
+}
+
+#mainContainer{
+	border:2px solid black;
+	width:960px;
+	height:800px;
+	margin: 0 auto;
+	margin-bottom: 20px;
+	background-color: #313d52;
+}
+#banner{
+	width: 960px;
+	height:120px;
+	margin-top: 0px;
+	background-color: hsla(0,0%,100%,1.00);
+	background-image: url("20191028_110421.png");
+	background-position: left top;
+	background-repeat: no-repeat;
+	background: cover;
+}
+#banner .vazquez{
+	font-size:60px;
+	font-family:"Agency FB", Algerian, Arial, "Arial Black", sans-serif;
+	
+}
+#banner .familia{
+	font-size: 45px;
+	margin-left:5px;
+	color:hsla(183,85%,26%,1.00);
+}
+#interbanner {
+	padding-top: 30px;
+	padding-left:10px;
+}
+
+/*navigation bar*/
+
+.menu > li {
+	
+	float:left;
+	background-color: hsla(171,100%,10%,1.00);
+	border-right: 1px solid white;
+	border-top: 3px solid black;
+	border-bottom: 2px solid black;
+	list-style: none;
+	width:239px;	
+}
+.menu > li:last-of-type{
+	border-right: none;
+} 
+.menu > li a {
+	display:block;
+	margin:10px;
+	text-decoration: none;
+	color:white;
+	font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, "serif";
+	text-align: center;
+	font-size: 1.1em;
+}
+
+.menu > li:hover a{
+	font-size: 1.3em;
+	transition-duration: 0.8s;
+}
+.active {
+  font-weight:bold;
+}
+.menu a:hover:not(.active) {
+  background-color: hsla(171,100%,10%,1.00);
+} 
+/*Menu Responsive*/
+@media screen and (max-width: 600px) {
+  .menu li.right, 
+  .menu li {float: none;}
+}
+
+/*sub menu navigation bar*/
+
+#Nav{
+	position: relative;
+	margin:0px;
+	padding:0px;
+	
+}
+.navMenu {
+	position:absolute;
+	list-style: none;
+	display: none;
+}
+
+
+.navMenu li{
+	background-color: hsla(171,100%,10%,1.00);
+	list-style: none;
+	width:239px;
+	height:32px;
+}
+#Nav:hover .navMenu{
+	display: block;
+} 
+.menu .navMenu li:hover a{
+font-size: 1.2em;
+font-weight: bolder;
+} 
+
+
+
+/*En pagina INICIO*/
+#p1{
+	
+	font-size: 18px;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	color: snow;
+	font-style: italic;
+	margin-top: 60px;
+	margin-left: 30px;
+	
+}
+
+#txt1{
+	text-align: justify;
+	margin-top: 3px;
+	padding-left: 4px;
+	padding-right: 4px;
+	color: silver;
+}
